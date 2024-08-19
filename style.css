@@ -1,0 +1,61 @@
+/* API PARA TRAER FUENTES DE GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ececec;
+}
+
+/*------------ CARD LOGIN ------------*/
+
+.box-area {
+  width: 800px;
+  height: 500px;
+}
+
+/*------------ CAJA IZQUIERDA ------------*/
+
+.left-box {
+  background: #0c99ac;
+}
+
+.titulo-principal {
+  font-weight: 600;
+}
+
+.parrafo-intro {
+  width: 17rem;
+  text-align: center;
+  font-size: 16px;
+}
+
+.img-fluid {
+  width: 200px;
+}
+
+/*------------ CAJA DERECHA ------------*/
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+.encabezado {
+  text-align: end;
+}
+
+.encabezado h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.boton-iniciar {
+  background-color: #0c99ac;
+  color: white;
+}
+
+/* Estilo para el borde del input cuando está enfocado */
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.1rem rgba(69, 133, 143, 0.811);
+  outline: noe;
+}
