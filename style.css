@@ -16,7 +16,7 @@ body {
 /*------------ CAJA IZQUIERDA ------------*/
 
 .left-box {
-  background: #0c99ac;
+  background: #00616F;
 }
 
 .titulo-principal {
@@ -45,11 +45,16 @@ body {
 
 .encabezado h2 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: bold;
+  color: #444444;
+}
+
+.encabezado p {
+  color: #444444;
 }
 
 .boton-iniciar {
-  background-color: #0c99ac;
+  background-color: #00616F;
   color: white;
 }
 
