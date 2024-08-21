@@ -6,61 +6,30 @@ body {
   background: #ececec;
 }
 
-/*------------ CARD LOGIN ------------*/
-
-.box-area {
-  width: 800px;
-  height: 500px;
-}
-
-/*------------ CAJA IZQUIERDA ------------*/
-
-.left-box {
-  background: #00616F;
-}
-
-.titulo-principal {
-  font-weight: 600;
-}
-
-.parrafo-intro {
-  width: 17rem;
-  text-align: center;
-  font-size: 16px;
-}
-
-.img-fluid {
+img.img-fluid {
   width: 200px;
 }
 
-/*------------ CAJA DERECHA ------------*/
-
-.right-box {
-  padding: 40px 30px 40px 40px;
+.form-control::placeholder {
+  color: #a8a7a7;
 }
 
-.encabezado {
-  text-align: end;
-}
-
-.encabezado h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: #444444;
-}
-
-.encabezado p {
-  color: #444444;
-}
-
-.boton-iniciar {
-  background-color: #00616F;
+/* Estilos generales para botones */
+.btn {
+  background-color: #00616f; /* Mantén el mismo color de fondo en hover */
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
   color: white;
 }
 
-/* Estilo para el borde del input cuando está enfocado */
+/* Estilo para el botón cuando se pasa el ratón sobre él */
+.btn:hover {
+  background-color: #00616f; /* Mantén el mismo color de fondo en hover */
+  color: white; /* Color del texto en hover */
+}
+
 .form-control:focus {
   border-color: #ffffff;
   box-shadow: 0 0 0 0.1rem rgba(69, 133, 143, 0.811);
-  outline: noe;
 }
