@@ -1,4 +1,5 @@
 /* styles.css */
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -81,15 +82,14 @@ body {
   padding: 20px; /* Padding interno del contenido principal */
   background-color: #2c2c2b; /* Color de fondo del contenido principal */
   border-radius: 5px; /* Bordes redondeados del fondo */
-  align-items: center; /* Centrar verticalmente */
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
 }
 
-h1 {
-  color: white;
-  font-weight: 600;
-  font-size: 2rem; /* Tamaño de fuente para el encabezado */
-  margin: 0; /* Eliminar margen por defecto */
-  text-align: center; /* Centrar el texto */
+.content-section {
+  display: none; /* Oculta todas las secciones por defecto */
 }
+
+.content-section:target {
+  display: block; /* Muestra la sección cuando el id coincide con el hash en la URL */
+}
+
+

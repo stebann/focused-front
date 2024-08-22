@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
@@ -33,41 +34,55 @@
         </div>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#"
-              ><i class="fas fa-home"></i> Inicio</a
+            <a
+              class="nav-link"
+              href="sections/home/home.html"
+              target="content-frame"
             >
+              <i class="fas fa-home"></i> Inicio
+            </a>
           </li>
           <hr class="divider" />
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-cog"></i> Opción 1</a>
+            <a
+              class="nav-link"
+              href="sections/grupos/grupos.html"
+              target="content-frame"
+            >
+              <i class="fas fa-users"></i> Mis Grupos
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fas fa-chart-line"></i> Opción 2</a
+            <a
+              class="nav-link"
+              href="sections/notificaciones/notificaciones.html"
+              target="content-frame"
             >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fas fa-users"></i> Opción 3</a
-            >
+            <i class="fa-regular fa-bell"></i> Notificaciones
+            </a>
           </li>
           <hr class="divider" />
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fas fa-envelope"></i> Opción 4</a
+            <a
+              class="nav-link"
+              href="sections/estadisticas/estadisticas.html"
+              target="content-frame"
             >
+            <i class="fa-solid fa-chart-column"></i> Estadisticas
+            </a>
           </li>
         </ul>
       </nav>
 
       <!-- Main Content -->
       <div class="main-content p-4 flex-grow-1">
-        <!-- Aquí va el contenido principal -->
-        <h1>CONTENIDO PRINCIPAL</h1>
+        <iframe
+          name="content-frame"
+          src="/pages/dashboard/sections/home/home.html"
+          frameborder="0"
+          style="width: 100%; height: 100%; border: none"
+        ></iframe>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
