@@ -1,7 +1,7 @@
-# Nombre del Proyecto
+# FocusED
 
 ## Descripción
-Aquí puedes incluir una breve descripción de tu proyecto.
+Software para administrar tareas y trabajos en grupos.
 
 ## CLONAR EL PROYECTO
 
