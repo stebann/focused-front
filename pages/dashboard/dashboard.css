@@ -79,9 +79,9 @@ body {
 
 .main-content {
   margin: 20px;
-  padding: 20px; /* Padding interno del contenido principal */
   background-color: #2c2c2b; /* Color de fondo del contenido principal */
-  border-radius: 5px; /* Bordes redondeados del fondo */
+  border-radius: 20px; /* Bordes redondeados del fondo */
+  overflow: hidden;
 }
 
 .content-section {
