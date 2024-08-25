@@ -16,9 +16,9 @@ Para clonar el proyecto, sigue estos pasos:
 
 Para poder subir lo que hiciste en la terminal de Git Bash en la raiz del proyecto escribe:
 
-git add .                   (para añadir los cambios)
-git commit -m "mensaje"     (para guardar los cambios con un mensaje)
-git push                    (para subir los cambios a github)
+1. git add .                   (para añadir los cambios)
+2. git commit -m "mensaje"     (para guardar los cambios con un mensaje)
+3. git push                    (para subir los cambios a github)
 
 ## BAJAR CAMBIOS
 
