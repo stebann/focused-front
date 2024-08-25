@@ -10,7 +10,7 @@ Para clonar el proyecto, sigue estos pasos:
 1. Ve a **CODE** en tu repositorio en GitHub y copia el enlace del repositorio.
 2. Abre Visual Studio Code (VSCode) y en la terminal escribe el siguiente comando:
 
-   git clone https://github.com/tuusuario/tu-repositorio.git
+   git clone linkQueCopiaste
 
 ## SUBIR CAMBIOS
 
