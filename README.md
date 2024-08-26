@@ -3,7 +3,7 @@
 ## Descripción
 Software para administrar tareas y trabajos en grupos.
 
-## CLONAR EL PROYECTO
+## CLONAR EL PROYECTO PARA COLABORADORES
 
 Para clonar el proyecto, sigue estos pasos:
 
