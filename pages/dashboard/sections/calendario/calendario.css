@@ -1,183 +1,99 @@
+/* Estilos generales para el body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.sidebar {
-    width: 250px;
-    background: linear-gradient(180deg, #1e3a8a, #4b9ce2);
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.user-profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    border: 4px solid #fff;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 15px 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 12px;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #ff6f61, #ff9a8b);
-    transition: 0.3s, padding 0.3s, transform 0.3s;
-}
-
-nav ul li.active a {
-    background: linear-gradient(90deg, #ff9a8b, #ff6f61);
-    padding: 15px;
-    transform: scale(1.05);
-}
-
-nav ul li a:hover {
-    background: linear-gradient(90deg, #ff6f61, #ff9a8b);
-    padding: 15px;
-    transform: scale(1.05);
-}
-
+/* Contenedor principal de la página */
 .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    overflow-y: auto;
+  flex: 1;
+  padding: 20px;
+  background-color: #315b5495;
+  overflow-y: auto;
 }
 
+/* Contenedor del calendario */
 .calendar-container {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 20px;
+  background-color: #1b1818;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Encabezado del calendario */
 .calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .calendar-header h1 {
-    margin: 0;
-    font-size: 24px;
+  margin: 0;
+  font-size: 24px;
 }
 
-.calendar-header .controls {
-    display: flex;
-    gap: 10px;
+.controls {
+  display: flex;
+  gap: 10px;
 }
 
-.calendar-header .controls button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #1e3a8a;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+/* Botones de navegación del calendario */
+.controls button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #1e3a8a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.calendar-header .controls button:hover {
-    background-color: #4b9ce2;
+.controls button:hover {
+  background-color: #4b9ce2;
 }
 
+/* Estilos para la tabla del calendario */
 table.calendar {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-table.calendar thead th {
-    padding: 10px;
-    background-color: #4b9ce2;
-    color: #fff;
-    text-align: center;
+thead th {
+  padding: 10px;
+  background-color: #4b9ce2;
+  color: #fff;
+  text-align: center;
 }
 
-table.calendar td {
-    width: 14.2%;
-    height: 100px;
-    border: 1px solid #e5e7eb;
-    vertical-align: top;
-    padding: 5px;
-    position: relative;
+td {
+  width: 14.2%;
+  height: 100px;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
 }
 
-table.calendar td .date {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-weight: bold;
+.date {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
 }
 
-table.calendar td.event {
-    background-color: #ff9a8b;
-    color: #fff;
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    font-size: 14px;
-}
-.sidebar {
-    width: 250px;
-    background: linear-gradient(180deg, #1e3a8a, #4b9ce2);
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%; /* Ocupa el ancho completo de la barra lateral */
-}
-
-nav ul li {
-    margin: 15px 0;
-    text-align: center; /* Centra el texto dentro de los elementos de la lista */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 12px;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #ff6f61, #ff9a8b);
-    transition: background 0.3s, padding 0.3s, transform 0.3s;
+/* Estilos para celdas con eventos en el calendario */
+td.event {
+  background-color: #ff9a8b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
 }

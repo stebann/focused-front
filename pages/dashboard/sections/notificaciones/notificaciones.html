@@ -1,14 +1,31 @@
-<!-- sections/home.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="notificaciones.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="notificaciones.css"> 
 </head>
 <body>
-    <h1>Contenido NOTIFICACIONES</h1>
-    <p>Este es el contenido de la sección de nofiticaciones.</p>
+    <div class="notification-panel"> <!-- Contenedor principal del panel de notificaciones -->
+        <div class="notification-header"> <!-- Encabezado del panel -->
+            <h2>Notificaciones</h2>
+        </div>
+        <div class="notification"> <!-- Notificación individual -->
+            <p class="notification-message">Cody solicitó unirse a Copy para Dashboard</p>
+            <span class="notification-time">Hace 2 horas • Medical Dashboard</span>
+            <div class="notification-actions"> <!-- Acciones disponibles para la notificación -->
+                <button class="btn-accept">Aceptar</button>
+                <button class="btn-deny">Rechazar</button>
+            </div>
+        </div>
+        <div class="notification"> <!-- Otra notificación -->
+            <p class="notification-message">Jonathan te recordó en Dashboard - Settings Copy</p>
+            <span class="notification-time">Hace 16 horas • Medical Dashboard</span>
+            <div class="notification-actions"> <!-- Acción de respuesta -->
+                <button class="btn-reply">Responder</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -16,7 +16,7 @@ img.img-fluid {
 
 /* Estilos generales para botones */
 .btn {
-  background-color: #00616f; /* Mantén el mismo color de fondo en hover */
+  background-color: #00616f;
   border-radius: 5px;
   padding: 10px 20px;
   border: none;
@@ -25,8 +25,8 @@ img.img-fluid {
 
 /* Estilo para el botón cuando se pasa el ratón sobre él */
 .btn:hover {
-  background-color: #00616f; /* Mantén el mismo color de fondo en hover */
-  color: white; /* Color del texto en hover */
+  background-color: #00616f;
+  color: white;
 }
 
 .form-control:focus {
