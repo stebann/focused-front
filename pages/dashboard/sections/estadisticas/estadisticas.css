@@ -1,20 +1,69 @@
+/* Estilos básicos para la página de estadísticas */
 body {
-    background-color: #b2414795; /* Fondo de la página */
-    color: #f5f5f5; /* Color del texto */
-    font-family: "Nunito", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
     padding: 20px;
 }
 
-h1 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: 600;
+.stats-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #dcdcdc;
+.statistic {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.statistic h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.statistic p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 5px;
 }

@@ -1,15 +1,42 @@
-<!-- sections/home.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Tareas</title>
     <link rel="stylesheet" href="estadisticas.css">
 </head>
 <body>
-    <h1>Contenido ESTADISTICAS</h1>
-    <p>Este es el contenido de la sección de estadisticas.</p>
-    <H4>TRABAJANDO EN ELLO...</H4>
+<header>
+    <h1>Estadísticas de Tareas</h1>
+    <nav>
+        <a href="calendario.html">Volver al Calendario</a>
+    </nav>
+</header>
+<main>
+    <section class="stats-container">
+        <div class="statistic">
+            <h2>Tareas Completadas</h2>
+            <p id="completed-tasks">10/30</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 33%;"></div>
+            </div>
+        </div>
+        <div class="statistic">
+            <h2>Tareas Pendientes</h2>
+            <p id="pending-tasks">20</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 67%;"></div>
+            </div>
+        </div>
+        <div class="statistic">
+            <h2>Tareas Urgentes</h2>
+            <p id="urgent-tasks">5</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 17%;"></div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
