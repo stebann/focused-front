@@ -7,10 +7,7 @@ body {
 }
 
 .container {
-  background-color: #121212;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 h1 {
@@ -23,72 +20,55 @@ h1 {
 
 .notifications-wrapper {
   width: 100%;
-  max-width: 700px;
   margin: 0 auto;
 }
 
 .notifications-container {
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.notification {
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
-  border-left: 4px solid transparent;
-  transition: background-color 0.3s, border-left-color 0.3s;
 }
 
-.notification.unread {
-  border-left-color: #ff5722;
+.card {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: none;
+  margin-bottom: 10px; /* Reducido el margen inferior de las tarjetas */
+  width: 100%;
+  max-width: 260px; /* Ajustado el ancho máximo de las tarjetas */
 }
 
-.notification:hover {
-  background-color: #333333;
+.card-body {
+  padding: 15px;
 }
 
-.notification-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  color: #9e9e9e;
-}
-
-.notification-time {
+.card-title {
+  font-size: 16px;
   font-weight: bold;
 }
 
-.notification-text {
-  margin: 0;
-  font-size: 16px;
-  color: #e0e0e0;
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: transparent;
+  border-top: none;
+  padding: 10px;
 }
 
-.notification-actions {
-  display: flex;
-  gap: 10px;
+.notification.unread .card {
+  border-left: 4px solid #ff5722;
 }
 
 .btn {
-  border-radius: 4px;
-  font-size: 14px;
+  flex-grow: 1;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
 .btn-success {
   background-color: #4caf50;
-  border: none;
-}
-
-.btn-warning {
-  background-color: #ffeb3b;
   border: none;
 }
 
@@ -97,7 +77,6 @@ h1 {
   border: none;
 }
 
-.btn-secondary {
-  background-color: #3f3f3f;
-  border: none;
+.btn:hover {
+  opacity: 0.9;
 }
