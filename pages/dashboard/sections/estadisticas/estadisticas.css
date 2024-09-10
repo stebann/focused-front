@@ -1,69 +1,47 @@
-/* Estilos básicos para la página de estadísticas */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
 }
 
-header h1 {
-    margin: 0;
+.stat-label {
+    font-size: 1rem;
+    color: #777;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
+.icon {
+    font-size: 2.5rem;
+    color: #1b3c64;
+    margin-bottom: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
+.card {
+    border-radius: 10px;
     padding: 20px;
+    transition: transform 0.2s ease;
 }
 
-.stats-container {
-    max-width: 800px;
-    margin: 0 auto;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.statistic {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-}
+/* Media Queries */
+@media (max-width: 768px) {
+    .stat-value {
+        font-size: 1.6rem;
+    }
 
-.statistic h2 {
-    margin-top: 0;
-    font-size: 1.5em;
-}
+    .stat-label {
+        font-size: 0.9rem;
+    }
 
-.statistic p {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    height: 10px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.progress {
-    background-color: #76c7c0;
-    height: 100%;
-    border-radius: 5px;
+    .icon {
+        font-size: 2rem;
+    }
 }
