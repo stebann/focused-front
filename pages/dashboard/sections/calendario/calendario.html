@@ -12,31 +12,23 @@
   <!-- Barra lateral -->
   <div class="sidebar">
     <h2>Mi Calendario</h2>
-    <div class="user-info mb-3">
-      <h3 class="mb-4">Ronald Toro Villalba</h3>
-      <p>Progreso de tareas</p>
-    </div>
     <div class="calendar-summary">
-      <h3>Julio 2022</h3>
-      <p>Tareas completadas</p>
+      <h3>Progreso de Tareas</h3>
+      <p>Total de tareas completadas: <span id="completed-tasks">0</span></p>
+      <p>Total de tareas pendientes: <span id="pending-tasks">0</span></p>
       <div class="progress-bar">
-        <div class="progress"></div>
+        <div class="progress" style="width: 50%;"></div> <!-- Ejemplo de barra de progreso -->
       </div>
     </div>
-    <div class="categories">
-      <h3>Categorías</h3>
-      <ul>
-        <li><span class="dot personal"></span>Personal</li>
-        <li><span class="dot work"></span>Trabajo</li>
-        <li><span class="dot health"></span>Salud</li>
-      </ul>
-    </div>
+    <button id="view-all-tasks" class="styled-button">Ver todas las tareas</button>
   </div>
 
   <!-- Panel principal del calendario -->
   <div class="main-panel">
     <header>
-      <h1>Diciembre 2023</h1>
+      <button id="prev-month" class="month-nav">&#9664;</button> <!-- Botón para retroceder -->
+      <h1 id="calendar-title">Diciembre 2023</h1> <!-- Título del mes actual -->
+      <button id="next-month" class="month-nav">&#9654;</button> <!-- Botón para avanzar -->
       <nav>
         <button>Mes</button>
         <button>Semana</button>
@@ -54,9 +46,49 @@
       <div class="day-header">Vie</div>
       <div class="day-header">Sáb</div>
 
-      <!-- Días del mes -->
-      <div class="day" data-day="1">1</div>
-      <div class="day" data-day="2">2</div>
+
+        <!-- Días del mes de diciembre (empezando en viernes) -->
+        <!-- Días vacíos para alinear correctamente el inicio del mes -->
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day" data-day="1">1</div>
+        <div class="day" data-day="2">2</div>
+
+        <!-- Días de diciembre -->
+        <div class="day" data-day="3">3</div>
+        <div class="day" data-day="4">4</div>
+        <div class="day" data-day="5">5</div>
+        <div class="day" data-day="6">6</div>
+        <div class="day" data-day="7">7</div>
+        <div class="day" data-day="8">8</div>
+        <div class="day" data-day="9">9</div>
+        <div class="day" data-day="10">10</div>
+        <div class="day" data-day="11">11</div>
+        <div class="day" data-day="12">12</div>
+        <div class="day" data-day="13">13</div>
+        <div class="day" data-day="14">14</div>
+        <div class="day" data-day="15">15</div>
+        <div class="day" data-day="16">16</div>
+        <div class="day" data-day="17">17</div>
+        <div class="day" data-day="18">18</div>
+        <div class="day" data-day="19">19</div>
+        <div class="day" data-day="20">20</div>
+        <div class="day" data-day="21">21</div>
+        <div class="day" data-day="22">22</div>
+        <div class="day" data-day="23">23</div>
+        <div class="day" data-day="24">24</div>
+        <div class="day" data-day="25">25</div>
+        <div class="day" data-day="26">26</div>
+        <div class="day" data-day="27">27</div>
+        <div class="day" data-day="28">28</div>
+        <div class="day" data-day="29">29</div>
+        <div class="day" data-day="30">30</div>
+        <div class="day" data-day="31">31</div>
+      </div>
+
       <!-- Continua con más días -->
     </div>
   </div>
@@ -69,18 +101,38 @@
         <label for="event-date">Fecha:</label>
         <input type="date" id="event-date" required>
 
-        <label for="event-category">Categoría:</label>
-        <select id="event-category">
-          <option value="personal">Personal</option>
-          <option value="work">Trabajo</option>
-          <option value="health">Salud</option>
+        <label for="event-title">Título:</label>
+        <input type="text" id="event-title" placeholder="Título del evento" required>
+
+        <label for="event-priority">Prioridad:</label>
+        <select id="event-priority">
+          <option value="alta">Alta</option>
+          <option value="media">Media</option>
+          <option value="baja">Baja</option>
         </select>
 
+        <label for="event-time">Hora:</label>
+        <input type="time" id="event-time" required>
+
         <label for="event-description">Descripción:</label>
-        <input type="text" id="event-description" required>
+        <textarea id="event-description" placeholder="Descripción del evento" required></textarea>
+
+        <label for="event-location">Ubicación:</label>
+        <input type="text" id="event-location" placeholder="Ubicación del evento">
 
         <button type="submit">Agregar Evento</button>
       </form>
+      <button class="close-modal">&times;</button>
+    </div>
+  </div>
+
+  <!-- Panel emergente para ver lista de tareas -->
+  <div id="task-list-modal" class="modal">
+    <div class="modal-content">
+      <h2>Lista de Tareas</h2>
+      <ul id="task-list">
+        <!-- Las tareas se mostrarán aquí -->
+      </ul>
       <button class="close-modal">&times;</button>
     </div>
   </div>
