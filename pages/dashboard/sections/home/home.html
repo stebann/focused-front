@@ -10,8 +10,110 @@
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="home.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container mt-5">
+      <!-- Header del Dashboard -->
+      <div class="header text-center mb-4">
+        <h2 class="fw-bold">Bienvenido, Alejandro</h2>
+        <p class="text-muted">Aquí tienes un resumen de tus actividades</p>
+      </div>
+
+      <!-- Sección de Resumen -->
+      <div class="row">
+        <!-- Tareas Pendientes -->
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4 custom-card">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Tareas Pendientes</h5>
+              <p class="card-text text-muted">5 Tareas sin completar</p>
+              <a href="/tareas" class="btn btn-outline-primary btn-sm"
+                >Ver todas</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Próximos Eventos -->
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4 custom-card">
+            <div class="card-body">
+              <h5 class="card-title text-success">Próximos Eventos</h5>
+              <p class="card-text text-muted">2 Eventos esta semana</p>
+              <a href="/eventos" class="btn btn-outline-success btn-sm"
+                >Ver calendario</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Progreso Académico -->
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4 custom-card">
+            <div class="card-body">
+              <h5 class="card-title text-info">Progreso Académico</h5>
+              <p class="card-text text-muted">3/5 Asignaturas completadas</p>
+              <a href="/progreso" class="btn btn-outline-info btn-sm"
+                >Ver detalles</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md">
+          <div class="card shadow-sm custom-card">
+            <div class="card-body">
+              <!-- Contenedor flex para el título y el botón -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5 class="card-title mb-0">Próximas Fechas Importantes</h5>
+                <a
+                  href="ruta/a/tu/calendario"
+                  class="btn btn-outline-primary btn-sm"
+                  >Ver más</a
+                >
+              </div>
+
+              <!-- Lista de eventos -->
+              <div class="event-list">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <span class="text-muted"
+                      >📅 Examen de Historia - 15 de Noviembre</span
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <span class="text-muted"
+                      >📅 Entrega de Proyecto de Ciencias - 22 de
+                      Noviembre</span
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <span class="text-muted"
+                      >📅 Conferencia: "Tecnología y Educación" - 29 de
+                      Noviembre</span
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <span class="text-muted"
+                      >📅 Seminario de Matemáticas - 5 de Diciembre</span
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <span class="text-muted"
+                      >📅 Reunión de Padres - 10 de Diciembre</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
