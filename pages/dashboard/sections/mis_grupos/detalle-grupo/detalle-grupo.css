@@ -143,7 +143,6 @@ body {
   text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
   padding-left: 12px; /* Añade algo de espacio a la izquierda */
   border-left: 4px solid #007bff; /* Línea a la izquierda en azul */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
 }
 
 /* Opcional: Añadir un efecto hover para el título */

@@ -1,10 +1,6 @@
 /* API PARA TRAER FUENTES DE GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 img.img-fluid {
   width: 200px;
 }
@@ -31,4 +27,13 @@ img.img-fluid {
 .form-control:focus {
   border-color: #ffffff;
   box-shadow: 0 0 0 0.1rem rgba(69, 133, 143, 0.811);
+}
+
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Oculta ambas barras en Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Oculta ambas barras en navegadores basados en WebKit */
 }

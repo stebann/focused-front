@@ -1,0 +1,260 @@
+/* Barra superior */
+.barra-superior {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  top: 0;
+  z-index: 10;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Estilo para el contenedor de tareas pendientes */
+.tareas-pendientes {
+  display: flex;
+  align-items: center;
+  border: 1px solid #6c757d; /* Borde gris elegante */
+  padding: 4px 8px; /* Ajuste del padding */
+  border-radius: 8px;
+  color: #6c757d; /* Texto gris */
+  font-weight: 600;
+  margin-right: 16px; /* Separación del contador de tareas totales */
+}
+
+.pendientes-text {
+  font-size: 0.9rem; /* Ajuste del tamaño de fuente */
+  margin-right: 8px;
+  color: #6c757d !important; /* Texto gris */
+}
+
+.pendientes-numero {
+  font-size: 0.9rem; /* Ajuste del tamaño de fuente */
+  font-weight: bold;
+  background-color: #4e7c8a; /* Fondo color frío */
+  color: #fff !important; /* Texto blanco */
+  padding: 2px 6px;
+  border-radius: 4px;
+  width: 30px; /* Ancho fijo */
+  height: 30px; /* Alto fijo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para el botón de crear tarea personalizado */
+.btn-crear-tarea {
+  background-color: #248886; /* Color verde elegante */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-crear-tarea i {
+  font-size: 1.2rem;
+}
+
+.btn-crear-tarea:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para los radio botones */
+.radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px; /* Ajuste de margen para acercar a pendientes */
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 4px;
+}
+
+.radio-buttons label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Lista de tareas */
+.lista-tareas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  overflow: hidden; /* Evita el scroll */
+}
+
+/* Card de tarea */
+.card-tarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 170px; /* Aumentar la altura de la card */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-tarea {
+  position: relative; /* Asegura que el pseudo-elemento ::after se posicione correctamente */
+  flex-shrink: 0; /* Evita que el checkbox se reduzca */
+  width: 16px; /* Tamaño por defecto del checkbox */
+  height: 16px; /* Asegúrate de que el alto sea igual al ancho */
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #007bff; /* Color del borde */
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  box-sizing: border-box; /* Asegúrate de que el padding y el borde se incluyan en el tamaño total */
+}
+
+.checkbox-tarea:checked {
+  background-color: #007bff; /* Color de fondo cuando está seleccionado */
+  border-color: #007bff;
+}
+
+.checkbox-tarea:checked::after {
+  content: "\2713"; /* Símbolo de check */
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px; /* Ajusta el tamaño del símbolo de check */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulo-tarea {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap; /* Mostrar en una sola línea */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+.card-body {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.descripcion-tarea {
+  font-size: 0.9rem;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fecha-tarea {
+  font-size: 0.9rem;
+  color: #248886; /* Cambiar el color de la fecha */
+  font-weight: bold; /* Hacer la fecha más prominente */
+}
+
+.btn-ver-tarea {
+  background-color: #fff; /* Fondo blanco */
+  color: #248886; /* Texto del mismo color que la fecha */
+  border: 1px solid #248886; /* Borde del mismo color */
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+}
+
+.btn-ver-tarea:hover {
+  background-color: #248886; /* Fondo del mismo color que la fecha */
+  color: #fff; /* Texto blanco */
+  transform: scale(1.05); /* Efecto de escala */
+}
+
+.no-resize {
+  resize: none; /* Evita que el textarea se pueda redimensionar */
+}
+
+.btn-cancelar {
+  background-color: transparent; /* Fondo transparente */
+  color: #dc3545; /* Color rojo */
+  border: 2px solid #dc3545; /* Borde rojo */
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+.btn-cancelar:hover {
+  background-color: #dc3545; /* Fondo rojo oscuro */
+  color: #fff; /* Texto blanco */
+  transform: scale(1.05);
+}
+
+.btn-crear-grupo {
+  background-color: #007bff; /* Color azul */
+  color: #fff;
+  border: 2px solid #007bff; /* Borde azul */
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+.btn-crear-grupo:hover {
+  background-color: #0056b3; /* Color azul oscuro */
+  border-color: #0056b3; /* Borde azul oscuro */
+  transform: scale(1.05);
+}
+
+.modal-dialog {
+  max-width: 60%; /* Aumenta el ancho del modal */
+}
