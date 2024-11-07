@@ -92,10 +92,15 @@ body {
 
 /* Main Content */
 .main-content {
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #ddd;
   overflow: hidden;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;  /* Bordes redondeados para el iframe */
 }

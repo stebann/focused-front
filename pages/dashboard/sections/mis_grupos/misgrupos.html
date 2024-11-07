@@ -1,227 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mis Grupos</title>
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-  />
-  <link rel="stylesheet" href="misgrupos.css" />
-  <link rel="stylesheet" href="/style.css" />
-  <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-</head>
-<body>
-<!-- Barra superior con información y botón de crear, ocupando todo el ancho -->
-<div class="barra-superior mb-4">
-  <div class="d-flex justify-content-between align-items-center">
-    <!-- Información de grupos y tareas -->
-    <div class="d-flex">
-          <span class="me-4">
-            <i class="fas fa-users"></i> Grupos Totales: 5
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Grupos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="misgrupos.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barra superior con información y botón de regresar -->
+    <div class="barra-superior mb-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <span class="me-3"> <i class="fas fa-users"></i> Grupos: 5 </span>
+          <span class="me-3">
+            <i class="fas fa-tasks"></i>Tareas Pendientes: 3
           </span>
-      <span class="me-4">
-            <i class="fas fa-tasks"></i> Tareas Pendientes: 10
-          </span>
-    </div>
-    <!-- Botón de crear grupo -->
-    <button
-            class="btn-crear-grupo btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#crearGrupoModal"
-    >
-      <i class="fas fa-plus-circle"></i> Crear Grupo
-    </button>
-  </div>
-</div>
-
-<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
-  <!-- Card 1 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Estudio</h5>
-        <p class="card-text">
-          Este grupo está enfocado en estudiar para los exámenes finales de la carrera.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 3
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Proyecto</h5>
-        <p class="card-text">
-          Este grupo está trabajando en un proyecto de desarrollo de software.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 5
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Diseño</h5>
-        <p class="card-text">
-          Un grupo que se dedica a crear prototipos y diseños para proyectos de la universidad.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 4
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Diseño</h5>
-        <p class="card-text">
-          Un grupo que se dedica a crear prototipos y diseños para proyectos de la universidad.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 4
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 5 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Diseño</h5>
-        <p class="card-text">
-          Un grupo que se dedica a crear prototipos y diseños para proyectos de la universidad.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 4
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 6 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Diseño</h5>
-        <p class="card-text">
-          Un grupo que se dedica a crear prototipos y diseños para proyectos de la universidad.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 4
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 7 -->
-  <div class="col">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Grupo de Diseño</h5>
-        <p class="card-text">
-          Un grupo que se dedica a crear prototipos y diseños para proyectos de la universidad.
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="members-info">
-            <i class="fas fa-users"></i> 4
-          </div>
-          <a href="ver_grupo.html" class="btn btn-ver btn-sm">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal para crear un grupo -->
-<div
-        class="modal fade"
-        id="crearGrupoModal"
-        tabindex="-1"
-        aria-labelledby="crearGrupoModalLabel"
-        aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="crearGrupoModalLabel">Crear un Nuevo Grupo</h5>
+        <!-- Botón de regresar -->
         <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="grupoNombre" class="form-label">Nombre del Grupo</label>
-            <input
-                    type="text"
-                    class="form-control"
-                    id="grupoNombre"
-                    placeholder="Ingrese el nombre del grupo"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="grupoDescripcion" class="form-label">Descripción</label>
-            <textarea
-                    class="form-control"
-                    id="grupoDescripcion"
-                    rows="3"
-                    placeholder="Ingrese una breve descripción del grupo"
-            ></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
+          class="btn btn-secondary"
+          data-bs-toggle="modal"
+          data-bs-target="#crearGrupoModal"
         >
-          Cancelar
+          <i class="fas fa-plus-circle"></i> Crear
         </button>
-        <button type="button" class="btn btn-primary">Crear Grupo</button>
       </div>
     </div>
-  </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Grupo de Estudio</h5>
+            <p class="card-text">
+              Este grupo está enfocado en estudiar para los exámenes finales de
+              la carrera.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                href="/pages/dashboard/sections/mis_grupos/detalle-grupo/detalle-grupo.html"
+                class="btn btn-ver btn-sm"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Grupo de Proyecto</h5>
+            <p class="card-text">
+              Este grupo está trabajando en un proyecto de desarrollo de
+              software.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                href="/pages/dashboard/sections/mis_grupos/detalle-grupo/detalle-grupo.html"
+                class="btn btn-ver btn-sm"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Grupo de Diseño</h5>
+            <p class="card-text">
+              Un grupo que se dedica a crear prototipos y diseños para proyectos
+              de la universidad.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                href="/pages/dashboard/sections/mis_grupos/detalle-grupo/detalle-grupo.html"
+                class="btn btn-ver btn-sm"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="crearGrupoModal"
+      tabindex="-1"
+      aria-labelledby="crearGrupoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="crearGrupoModalLabel">
+              Crear un Nuevo Grupo
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="grupoNombre" class="form-label"
+                  >Nombre del Grupo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="grupoNombre"
+                  placeholder="Ingrese el nombre del grupo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="grupoDescripcion" class="form-label"
+                  >Descripción</label
+                >
+                <textarea
+                  class="form-control"
+                  id="grupoDescripcion"
+                  rows="3"
+                  placeholder="Ingrese una breve descripción del grupo"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-secondary">Crear Grupo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
